@@ -1,0 +1,15 @@
+C:\BBD\C# Fundamentals\GetDOB\bin\Debug\net7.0\GetDOB.exe
+C:\BBD\C# Fundamentals\GetDOB\bin\Debug\net7.0\GetDOB.deps.json
+C:\BBD\C# Fundamentals\GetDOB\bin\Debug\net7.0\GetDOB.runtimeconfig.json
+C:\BBD\C# Fundamentals\GetDOB\bin\Debug\net7.0\GetDOB.dll
+C:\BBD\C# Fundamentals\GetDOB\bin\Debug\net7.0\GetDOB.pdb
+C:\BBD\C# Fundamentals\GetDOB\obj\Debug\net7.0\GetDOB.csproj.AssemblyReference.cache
+C:\BBD\C# Fundamentals\GetDOB\obj\Debug\net7.0\GetDOB.GeneratedMSBuildEditorConfig.editorconfig
+C:\BBD\C# Fundamentals\GetDOB\obj\Debug\net7.0\GetDOB.AssemblyInfoInputs.cache
+C:\BBD\C# Fundamentals\GetDOB\obj\Debug\net7.0\GetDOB.AssemblyInfo.cs
+C:\BBD\C# Fundamentals\GetDOB\obj\Debug\net7.0\GetDOB.csproj.CoreCompileInputs.cache
+C:\BBD\C# Fundamentals\GetDOB\obj\Debug\net7.0\GetDOB.dll
+C:\BBD\C# Fundamentals\GetDOB\obj\Debug\net7.0\refint\GetDOB.dll
+C:\BBD\C# Fundamentals\GetDOB\obj\Debug\net7.0\GetDOB.pdb
+C:\BBD\C# Fundamentals\GetDOB\obj\Debug\net7.0\GetDOB.genruntimeconfig.cache
+C:\BBD\C# Fundamentals\GetDOB\obj\Debug\net7.0\ref\GetDOB.dll
