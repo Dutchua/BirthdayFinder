@@ -1,7 +1,7 @@
 using System;
 namespace BirthFinder
 {
-    class FileFinder
+    class IDValidator
     {
         public static void Main()
         {
