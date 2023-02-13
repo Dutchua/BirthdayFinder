@@ -5,7 +5,7 @@ namespace BirthFinder
     class IDValidator
     {
 
-        private Boolean fileExists = File.Exists(Settings.filePath + Settings.fileName);
+        private bool fileExists = File.Exists(Settings.filePath + Settings.fileName);
 
         public static void Main()
         {
@@ -20,31 +20,34 @@ namespace BirthFinder
                 string[] fileContents = ReadFile();
                 foreach(string line in fileContents)
                 {
-                    Console.WriteLine(ValidationChecks(line));
+                    
                 }
 
             }Console.WriteLine("File not found.");
         }
 
-        private Boolean ValidationChecks(string line)
-        {
-            
-            return LengthDigitCheck(line) ? (PassesLuhnCheck(line) ? true : false) : false;
+        public delegate bool Validate(string line);
+
+        private bool ValidationChecks(string line)
+        {    
+            Validate lengthDigitCheck = LengthDigitCheck;
+            Validate luhnCheck = LuhnCheck;
+            return lengthDigitCheck(line) ? (luhnCheck(line) ? true : false) : false;
         }
 
-        private Boolean LengthDigitCheck(string line)
+        private bool LengthDigitCheck(string line)
         {
             Regex regex = new Regex(@"^\d{13}$");
             return regex.IsMatch(line);
         }
 
-        private bool PassesLuhnCheck(string value)
+        private bool LuhnCheck(string line)
         {
             long sum = 0;
 
-            for (int i = 0; i < value.Length; i++)
+            for (int i = 0; i < line.Length; i++)
             {
-                var digit = value[value.Length - 1 - i] - '0';
+                var digit = line[line.Length - 1 - i] - '0';
                 sum += (i % 2 != 0) ? GetDouble(digit) : digit;
             }
 
