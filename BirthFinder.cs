@@ -5,9 +5,13 @@ namespace BirthFinder
     {
         public static void Main()
         {
-            string IDFile = Directory.GetCurrentDirectory() + @"\ID.txt";
-            string[] lines = File.ReadAllLines(IDFile);
             
+        }
+
+        private string[] ReadFile()
+        {
+            string IDFile = Directory.GetCurrentDirectory() + @"\ID.txt";
+            return File.ReadAllLines(IDFile);
         }
     }
 }
