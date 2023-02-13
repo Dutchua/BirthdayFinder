@@ -4,7 +4,7 @@ namespace BirthFinder
     {
         public string[] ReadFile()
         {
-            string IDFile = Settings.filePath + Settings.fileName;
+            string IDFile = Settings.FilePath + Settings.IDFileName;
             return File.ReadAllLines(IDFile);
         }
 
