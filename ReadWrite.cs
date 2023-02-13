@@ -10,7 +10,7 @@ namespace BirthFinder
 
         public void WriteToFIle(string line, int birthYear)
         {
-            string DOBPath = @"C:\BBD\C# Fundamentals\BirthdayFinder\docs\DOB.txt";
+            string DOBPath = Settings.FilePath + Settings.DOBFileName;
             if(File.Exists(DOBPath))
             {
                 if(birthYear <= 2010)
