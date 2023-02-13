@@ -9,21 +9,41 @@ namespace BirthFinder
 
         public static void Main()
         {
-            IDValidator validator = new IDValidator();
-            validator.Run();
+            IDValidator IDvalidator = new IDValidator();
+            IDvalidator.Run();
         }
 
-        public void Run()
+        private void Run()
         {
             if(fileExists)
             {                
                 string[] fileContents = rw.ReadFile();
+                Validation validation = new Validation();
                 foreach(string line in fileContents)
                 {
-                    
+                    if(validation.ValidationChecks(line))
+                    {
+                        Console.WriteLine("Valid ID: " + line);
+                    }
                 }
 
             }Console.WriteLine("File not found.");
+        }
+
+        private void ConvertDate(string line)
+        {
+            try
+            {
+                int year = int.Parse(line.Substring(0, 2));
+                int birthYear;
+                if (year >= 0 && year <= 23)
+                    birthYear = int.Parse("20" + line.Substring(0, 2));
+                else
+                    birthYear = int.Parse("19" + line.Substring(0, 2));
+            }catch
+            {
+                Console.WriteLine("Invalid ID Number: " + line);
+            }
         }
     }
 }
