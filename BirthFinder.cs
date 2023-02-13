@@ -45,6 +45,8 @@ namespace BirthFinder
                     birthYear = int.Parse("20" + line.Substring(0, 2));
                 else
                     birthYear = int.Parse("19" + line.Substring(0, 2));
+
+                rw.WriteToFIle(line, birthYear);
             }catch
             {
                 Console.WriteLine("Invalid ID Number: " + line);
