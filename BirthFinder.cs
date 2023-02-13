@@ -1,16 +1,16 @@
 using System;
 namespace BirthFinder
 {
-    class IDValidator
+    class IDValidator : Settings
     {
         public static void Main()
         {
             
         }
 
-        private string[] ReadFile()
+        private static string[] ReadFile()
         {
-            string IDFile = Directory.GetCurrentDirectory() + @"\ID.txt";
+            string IDFile = Settings.filePath + Settings.fileName;
             return File.ReadAllLines(IDFile);
         }
     }
