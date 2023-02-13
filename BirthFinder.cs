@@ -16,8 +16,8 @@ namespace BirthFinder
         {
             if(fileExists)
             {
-                
-            }
+                string[] fileContents = ReadFile();
+            }Console.WriteLine("File not found.");
         }
 
         public string[] ReadFile()
