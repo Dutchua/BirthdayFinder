@@ -1,4 +1,5 @@
 using System;
+using System.Text.RegularExpressions;
 namespace BirthFinder
 {
     class IDValidator
@@ -25,9 +26,15 @@ namespace BirthFinder
             }Console.WriteLine("File not found.");
         }
 
-        public void validationChecks()
+        public void validationChecks(string line)
         {
             
+        }
+
+        public Boolean lengthDigitCheck(string line)
+        {
+            Regex regex = new Regex(@"^\d{13}$");
+            return regex.IsMatch(line);
         }
 
         bool PassesLuhnCheck(string value)
