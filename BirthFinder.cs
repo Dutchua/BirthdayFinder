@@ -27,7 +27,7 @@ namespace BirthFinder
             {
                 if(validation.ValidationChecks(line))
                 {
-                    Console.WriteLine("Valid ID: " + line);
+                    Console.WriteLine(line.Substring(4, 2) + "/" +  line.Substring(2, 2) + "/" + line.Substring(0,2));
                 }else
                 {
                     Console.WriteLine("Invalid ID Number: " + line);
