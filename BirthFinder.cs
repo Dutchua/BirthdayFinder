@@ -5,6 +5,7 @@ namespace BirthFinder
     {
 
         private bool fileExists = File.Exists(Settings.filePath + Settings.fileName);
+        private ReadWrite rw = new ReadWrite();
 
         public static void Main()
         {
@@ -15,20 +16,14 @@ namespace BirthFinder
         public void Run()
         {
             if(fileExists)
-            {
-                string[] fileContents = ReadFile();
+            {                
+                string[] fileContents = rw.ReadFile();
                 foreach(string line in fileContents)
                 {
                     
                 }
 
             }Console.WriteLine("File not found.");
-        }
-
-        public string[] ReadFile()
-        {
-            string IDFile = Settings.filePath + Settings.fileName;
-            return File.ReadAllLines(IDFile);
         }
     }
 }

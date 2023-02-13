@@ -1,6 +1,6 @@
 namespace BirthFinder
 {
-    class ReadWriteFile
+    class ReadWrite
     {
         public string[] ReadFile()
         {
