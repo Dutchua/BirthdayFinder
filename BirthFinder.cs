@@ -4,7 +4,7 @@ namespace BirthFinder
     class IDValidator
     {
 
-        private bool fileExists = File.Exists(Settings.filePath + Settings.fileName);
+        private bool fileExists = File.Exists(Settings.FilePath + Settings.IDFileName);
         private ReadWrite rw = new ReadWrite();
 
         public static void Main()
