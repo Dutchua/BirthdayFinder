@@ -20,24 +20,24 @@ namespace BirthFinder
                 string[] fileContents = ReadFile();
                 foreach(string line in fileContents)
                 {
-                    Console.WriteLine(PassesLuhnCheck(line));
+                    Console.WriteLine();
                 }
 
             }Console.WriteLine("File not found.");
         }
 
-        public void validationChecks(string line)
+        private Boolean validationChecks(string line)
         {
-            
+            return lengthDigitCheck(line) ? (passesLuhnCheck(line) ? true : false) : false;
         }
 
-        public Boolean lengthDigitCheck(string line)
+        private Boolean lengthDigitCheck(string line)
         {
             Regex regex = new Regex(@"^\d{13}$");
             return regex.IsMatch(line);
         }
 
-        bool PassesLuhnCheck(string value)
+        private bool passesLuhnCheck(string value)
         {
             long sum = 0;
 
