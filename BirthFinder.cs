@@ -3,6 +3,9 @@ namespace BirthFinder
 {
     class IDValidator
     {
+
+        private Boolean fileExists = File.Exists(Settings.filePath + Settings.fileName);
+
         public static void Main()
         {
             IDValidator validator = new IDValidator();
@@ -11,10 +14,13 @@ namespace BirthFinder
 
         public void run()
         {
-            
+            if(fileExists)
+            {
+                
+            }
         }
 
-        private static string[] ReadFile()
+        public string[] ReadFile()
         {
             string IDFile = Settings.filePath + Settings.fileName;
             return File.ReadAllLines(IDFile);
