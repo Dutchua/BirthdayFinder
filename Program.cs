@@ -35,6 +35,22 @@ namespace GetBirthdate
                     }
 
                     Console.WriteLine(line.Substring(4, 2) + "/" +  line.Substring(2, 2) + "/" + birthYear);
+                    WriteToFIle(line, birthYear);
+                }
+            }
+        }
+
+        public static void WriteToFIle(string line, int birthYear)
+        {
+            string filePath = "C:/BBD/C# Fundamentals/BirthdayFinder/DOB.txt";
+            if(File.Exists(filePath))
+            {
+                if(birthYear <= 2010)
+                {
+                    File.AppendAllText(filePath, line + " is below 2010 " + Environment.NewLine);
+                }else
+                {
+                    File.AppendAllText(filePath, line + " is above 2010" + Environment.NewLine);
                 }
             }
         }

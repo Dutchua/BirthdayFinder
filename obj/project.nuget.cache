@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lp4385H/mkwQcesOuEKxvGyOJeS4PZDAVj18Gs4MiSqQ3DRWDHThC9LQGM1ei/J6MSFI0VJXiKQCKAVwSH8pYw==",
+  "dgSpecHash": "xzcExee2Xh1o4wVOzHYs1LrPX2RkGcFhxSOe9tK1hs0hlROTn4NS5jz+FwEARH4ZQLkr1VUVisGX7I8fbpy8Yg==",
   "success": true,
-  "projectFilePath": "C:\\BBD\\C# Fundamentals\\GetDOB\\GetDOB.csproj",
+  "projectFilePath": "C:\\BBD\\C# Fundamentals\\BirthdayFinder\\GetDOB.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

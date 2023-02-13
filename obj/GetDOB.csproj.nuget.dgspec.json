@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\BBD\\C# Fundamentals\\GetDOB\\GetDOB.csproj": {}
+    "C:\\BBD\\C# Fundamentals\\BirthdayFinder\\GetDOB.csproj": {}
   },
   "projects": {
-    "C:\\BBD\\C# Fundamentals\\GetDOB\\GetDOB.csproj": {
+    "C:\\BBD\\C# Fundamentals\\BirthdayFinder\\GetDOB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\BBD\\C# Fundamentals\\GetDOB\\GetDOB.csproj",
+        "projectUniqueName": "C:\\BBD\\C# Fundamentals\\BirthdayFinder\\GetDOB.csproj",
         "projectName": "GetDOB",
-        "projectPath": "C:\\BBD\\C# Fundamentals\\GetDOB\\GetDOB.csproj",
+        "projectPath": "C:\\BBD\\C# Fundamentals\\BirthdayFinder\\GetDOB.csproj",
         "packagesPath": "C:\\Users\\bbdnet2871\\.nuget\\packages\\",
-        "outputPath": "C:\\BBD\\C# Fundamentals\\GetDOB\\obj\\",
+        "outputPath": "C:\\BBD\\C# Fundamentals\\BirthdayFinder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bbdnet2871\\AppData\\Roaming\\NuGet\\NuGet.Config",
