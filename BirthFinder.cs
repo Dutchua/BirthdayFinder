@@ -1,9 +1,15 @@
 using System;
 namespace BirthFinder
 {
-    class IDValidator : Settings
+    class IDValidator
     {
         public static void Main()
+        {
+            IDValidator validator = new IDValidator();
+            validator.run();
+        }
+
+        public void run()
         {
             
         }
