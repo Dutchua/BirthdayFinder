@@ -10,34 +10,35 @@ namespace BirthFinder
         public static void Main()
         {
             IDValidator validator = new IDValidator();
-            validator.run();
+            validator.Run();
         }
 
-        public void run()
+        public void Run()
         {
             if(fileExists)
             {
                 string[] fileContents = ReadFile();
                 foreach(string line in fileContents)
                 {
-                    Console.WriteLine();
+                    Console.WriteLine(ValidationChecks(line));
                 }
 
             }Console.WriteLine("File not found.");
         }
 
-        private Boolean validationChecks(string line)
+        private Boolean ValidationChecks(string line)
         {
-            return lengthDigitCheck(line) ? (passesLuhnCheck(line) ? true : false) : false;
+            
+            return LengthDigitCheck(line) ? (PassesLuhnCheck(line) ? true : false) : false;
         }
 
-        private Boolean lengthDigitCheck(string line)
+        private Boolean LengthDigitCheck(string line)
         {
             Regex regex = new Regex(@"^\d{13}$");
             return regex.IsMatch(line);
         }
 
-        private bool passesLuhnCheck(string value)
+        private bool PassesLuhnCheck(string value)
         {
             long sum = 0;
 
